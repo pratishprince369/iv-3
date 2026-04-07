@@ -1,0 +1,56 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: frames
+    // Document ID: auto-generated
+    // Fields:
+    //   - index: int (required) - for sorting
+    //   - frameNum: string (required) - e.g., "0.1"
+    //   - data: string (required) - base64 encoded image
+    //   - mimeType: string (required) - e.g., "image/webp"
+    //
+    // ===============================================================
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() &&
+        (get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin' ||
+          (request.auth.token.email == "vadapavwaledada@gmail.com" && request.auth.token.email_verified == true));
+    }
+
+    function isValidFrame(data) {
+      return data.keys().hasAll(['index', 'frameNum', 'data', 'mimeType']) &&
+             data.index is int &&
+             data.frameNum is string &&
+             data.data is string &&
+             data.mimeType is string;
+    }
+
+    // ===============================================================
+    // Rules
+    // ===============================================================
+
+    match /frames/{frameId} {
+      // Publicly readable for the animation to work
+      allow read: if true;
+      // Only admins can upload/modify frames
+      allow create, update, delete: if isAdmin() && isValidFrame(request.resource.data);
+    }
+
+    match /users/{userId} {
+      allow read: if isAuthenticated() && (request.auth.uid == userId || isAdmin());
+      allow create, update: if isAuthenticated() && request.auth.uid == userId && 
+                           (!request.resource.data.diff(resource.data).affectedKeys().hasAny(['role']) || isAdmin());
+    }
+  }
+}

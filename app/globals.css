@@ -1,0 +1,123 @@
+:root {
+  /* LIGHT SAGE & SOBER ELEGANCE THEMING */
+  --bg-primary:     #EBEAE0; /* Light sage/beige */
+  --bg-secondary:   #F3F2EB; /* Lighter beige */
+  --bg-white:       #FFFFFF;
+  
+  --bg-teal-dark:   #1A3C40; /* Dark teal for shotbar & footer */
+  --bg-teal-mid:    #1F4A50;
+  
+  /* TEXT COLORS */
+  --text-main:      #2C3333; /* Sober dark text for readability */
+  --text-rosy:      #9A7E7A; /* Rose/Taupe text for headings/accents */
+  --text-teal-light:#77CED3; /* Accent for dark sections */
+  
+  /* BUTTONS & BORDERS */
+  --accent-gold:    #C0A06D;
+  --border-soft:    rgba(154,126,122,0.15);
+  --border-teal:    rgba(119,206,211,0.2);
+
+  /* CLEAN SHADOWS */
+  --shadow-soft:    0 10px 40px rgba(0,0,0,0.03), 0 2px 10px rgba(0,0,0,0.02);
+  --shadow-float:   0 30px 60px rgba(0,0,0,0.06), 0 10px 20px rgba(0,0,0,0.04);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[var(--bg-primary)] text-[var(--text-main)] overflow-x-hidden transition-colors duration-500 ease-in-out;
+    font-family: var(--font-sans);
+  }
+}
+
+/* ─── CUSTOM CURSOR (MADE SOBER) ──────────────────────────────────────────── */
+.cursor-inner {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: var(--text-rosy);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+}
+
+.cursor-outer {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--text-rosy);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+  opacity: 0.3;
+}
+
+.cursor-outer.cursor-hover {
+  width: 48px;
+  height: 48px;
+  background: rgba(154,126,122,0.05);
+  opacity: 0.5;
+}
+
+/* ─── MARQUEE ANIMATIONS ─────────────────────────────────────── */
+@keyframes marqLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marqLeft {
+  animation: marqLeft 30s linear infinite;
+}
+
+/* ─── GRAIN TEXTURE (SOFTER) ──────────────────────────────────────────── */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9996;
+  opacity: 0.02;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* ─── UTILITIES ─────────────────────────────────────────────── */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+/* ─── CLEAN ANIMATIONS ──────────────────────────── */
+.parallax-layer {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+@keyframes slideFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: slideFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

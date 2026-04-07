@@ -1,0 +1,17 @@
+# Next.js build output
+.next/
+out/
+build/
+
+# Dependencies
+node_modules/
+
+# Environment variables
+.env*.local
+
+# Vercel
+.vercel
+
+# Explicitly include frames
+!public/frames/
+!public/frames/*.webp
