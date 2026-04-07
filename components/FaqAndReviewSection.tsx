@@ -47,7 +47,7 @@ export default function FaqAndReviewSection() {
             </div>
           </div>
           <h3 className="font-serif text-[28px] md:text-[36px] text-[#0369a1] italic leading-relaxed mb-6 font-medium">
-            "The nurse was incredibly professional and the space felt instantly relaxing. I would absolutely book again."
+            &quot;The nurse was incredibly professional and the space felt instantly relaxing. I would absolutely book again.&quot;
           </h3>
           <span className="font-sans text-[13px] md:text-[14px] text-[#0c4a6e]/50 font-bold tracking-[0.1em] uppercase">
             — Client Review

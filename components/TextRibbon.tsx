@@ -27,9 +27,11 @@ export default function TextRibbon() {
 
       {/* Deep navy ocean overlay */}
       <motion.div
-        style={{ opacity: overlayOpacity }}
         className="absolute inset-0"
-        style={{ background: 'linear-gradient(135deg, rgba(2,13,31,0.92) 0%, rgba(14,165,233,0.15) 50%, rgba(2,13,31,0.92) 100%)' }}
+        style={{ 
+          opacity: overlayOpacity,
+          background: 'linear-gradient(135deg, rgba(2,13,31,0.92) 0%, rgba(14,165,233,0.15) 50%, rgba(2,13,31,0.92) 100%)' 
+        }}
       />
 
       {/* Animated scan lines */}

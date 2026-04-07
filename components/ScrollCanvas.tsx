@@ -15,8 +15,6 @@ export default function ScrollCanvas({ progress, onProgress }: Props) {
   // Preload images from Firestore with local fallback
   useEffect(() => {
     const totalFrames = 79;
-    let isFallingBack = false;
-
     const loadLocalFrames = () => {
       console.log('Loading local frames directly to avoid Firebase quota limit...');
       

@@ -1,0 +1,18 @@
+
+C:\Users\ASUS\Desktop\social-daddy\iv-2\components\FaqAndReviewSection.tsx
+  50:13   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  50:121  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\ASUS\Desktop\social-daddy\iv-2\components\ScrollCanvas.tsx
+  18:9  warning  'isFallingBack' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  18:9  error    'isFallingBack' is never reassigned. Use 'const' instead  prefer-const
+
+C:\Users\ASUS\Desktop\social-daddy\iv-2\components\ShotBarSection.tsx
+  74:31  warning  'i' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\ASUS\Desktop\social-daddy\iv-2\next-env.d.ts
+  3:1  error  Do not use a triple slash reference for ./.next/types/routes.d.ts, use `import` style instead  @typescript-eslint/triple-slash-reference
+
+✖ 6 problems (4 errors, 2 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
