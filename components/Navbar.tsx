@@ -59,7 +59,7 @@ export default function Navbar() {
           <a
             key={link.name}
             href={link.href}
-            className="font-sans text-[10px] font-bold tracking-[0.2em] uppercase text-white hover:text-[#38bdf8] transition-colors drop-shadow-sm"
+            className="font-sans text-[10px] font-bold tracking-[0.2em] uppercase text-black hover:text-[#38bdf8] transition-colors drop-shadow-sm"
           >
             {link.name}
           </a>
