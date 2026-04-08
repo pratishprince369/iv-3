@@ -44,7 +44,7 @@ export default function AlternativeHero() {
             {/* Top Badge */}
             <div className="inline-flex items-center gap-2 bg-[#D1EBFF] border border-[#B3DFFF] rounded-full px-4 py-1.5 mb-5 shadow-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse" />
-              <span className="text-[#0077FF] text-[10px] font-bold tracking-[0.12em] uppercase font-syne">NEW YORK'S MOBILE IV SERVICE</span>
+              <span className="text-[#0077FF] text-[10px] font-bold tracking-[0.12em] uppercase font-syne">NEW YORK&apos;S MOBILE IV SERVICE</span>
             </div>
 
             <div className="text-[#0077FF] italic font-medium text-[16px] mb-4 drop-shadow-sm font-outfit tracking-wide">
@@ -138,7 +138,7 @@ export default function AlternativeHero() {
                      <rect x="35" y="38" width="90" height="58" rx="5" fill="#1A202C" />
                      <text x="80" y="60" fill="#38BDF8" fontSize="13" fontFamily="'Syne', Arial" fontWeight="bold" textAnchor="middle" letterSpacing="1">REVIVE</text>
                      <text x="80" y="70" fill="#94A3B8" fontSize="6.5" fontFamily="sans-serif" textAnchor="middle" letterSpacing="0.8">IV HYDRATION</text>
-                     <text x="80" y="80" fill="#4A5568" fontSize="5" fontFamily="sans-serif" textAnchor="middle" letterSpacing="1">LET'S REVIVE YOU</text>
+                     <text x="80" y="80" fill="#4A5568" fontSize="5" fontFamily="sans-serif" textAnchor="middle" letterSpacing="1">LET&apos;S REVIVE YOU</text>
                   </svg>
                   <svg style={{width:0, height:0, position:'absolute'}}>
                     <defs>

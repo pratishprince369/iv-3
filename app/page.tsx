@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useRef, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import LoadingScreen from '@/components/LoadingScreen';
 import AlternativeHero from '@/components/new-layout/AlternativeHero';
