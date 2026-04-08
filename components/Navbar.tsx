@@ -32,8 +32,8 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-[100] flex items-center justify-between px-4 md:px-6 lg:px-12 transition-all duration-500 ${
         isScrolled || isMenuOpen
-          ? 'bg-white/20 backdrop-blur-md py-3 shadow-sm'
-          : 'bg-white/10 backdrop-blur-sm py-4 md:py-5'
+          ? 'bg-white/60 backdrop-blur-md py-3 shadow-sm'
+          : 'bg-white/40 backdrop-blur-sm py-4 md:py-5'
       }`}
     >
       {/* Logo */}
