@@ -51,7 +51,7 @@ export default function AlternativeHero() {
               Feel Better. Faster. From the Inside Out.
             </div>
 
-            <h1 className="font-extrabold text-[4.5rem] md:text-[5.5rem] leading-[1.0] tracking-tight mb-7 font-syne uppercase">
+            <h1 className="font-extrabold text-[3.5rem] sm:text-[4.5rem] md:text-[5.5rem] leading-[1.0] tracking-tight mb-7 font-syne uppercase">
               <span className="text-[#1A202C] block">Revive.</span>
               <span className="text-[#1A202C] block">Rehydrate.</span>
               <span className="text-[#38bdf8] block drop-shadow-sm">Recover.</span>
@@ -65,7 +65,7 @@ export default function AlternativeHero() {
             <div className="bg-[#E5F3FF] border border-[#B3DFFF] shadow-sm rounded-xl p-3 mb-9 w-full max-w-[530px] flex items-center gap-4">
               <div className="text-[28px] shrink-0 pl-1 drop-shadow-md">🎁</div>
               <div className="flex flex-col">
-                <span className="text-[#00B4FF] font-black text-[16px] tracking-wide font-syne uppercase">New Clients Get $25 OFF Your First Bag!</span>
+                <span className="text-[#00B4FF] font-black text-[14px] sm:text-[16px] tracking-wide font-syne uppercase">New Clients Get $25 OFF Your First Bag!</span>
                 <span className="text-[#64748B] text-[11px] font-medium mt-0.5">Mention this offer when booking — limited time</span>
               </div>
             </div>

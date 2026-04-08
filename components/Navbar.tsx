@@ -79,9 +79,9 @@ export default function Navbar() {
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
       >
-        <span className={`w-6 h-[2px] bg-white rounded transition-all duration-300 origin-center ${isMenuOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
-        <span className={`w-6 h-[2px] bg-white rounded transition-all duration-300 ${isMenuOpen ? 'opacity-0 scale-x-0' : ''}`} />
-        <span className={`w-6 h-[2px] bg-white rounded transition-all duration-300 origin-center ${isMenuOpen ? '-rotate-45 -translate-y-[7px]' : ''}`} />
+        <span className={`w-6 h-[2px] rounded transition-all duration-300 origin-center ${isMenuOpen ? 'bg-white rotate-45 translate-y-[7px]' : 'bg-[#0a1628]'}`} />
+        <span className={`w-6 h-[2px] rounded transition-all duration-300 ${isMenuOpen ? 'bg-white opacity-0 scale-x-0' : 'bg-[#0a1628]'}`} />
+        <span className={`w-6 h-[2px] rounded transition-all duration-300 origin-center ${isMenuOpen ? 'bg-white -rotate-45 -translate-y-[7px]' : 'bg-[#0a1628]'}`} />
       </button>
 
       {/* Mobile Menu Overlay */}

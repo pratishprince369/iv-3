@@ -32,7 +32,7 @@ export default function BenefitsStrip() {
   return (
     <div className="w-full bg-[#f0f8fd] border-y border-blue-100 py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-4 overflow-x-auto no-scrollbar">
+        <div className="flex flex-row items-center justify-start lg:justify-between gap-6 lg:gap-4 overflow-x-auto no-scrollbar pb-2 pt-1 lg:py-0 w-full">
           {benefits.map((item, idx) => (
             <div key={idx} className="flex items-center space-x-3 shrink-0">
               <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center">

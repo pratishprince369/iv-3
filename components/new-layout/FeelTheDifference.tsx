@@ -41,7 +41,7 @@ export default function FeelTheDifference() {
     <div id="our-drips" className="w-full bg-[#f4f7fb] py-16">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-blue-500 font-bold tracking-widest text-xs uppercase mb-3 text-left">Choose Your Drip</div>
-        <h2 className="text-5xl md:text-[3.5rem] font-black text-[#0A1628] mb-4 text-left font-display uppercase tracking-tighter" style={{ fontFamily: "var(--font-display)" }}>
+        <h2 className="text-4xl md:text-[3.5rem] font-black text-[#0A1628] mb-4 text-left font-display uppercase tracking-tighter" style={{ fontFamily: "var(--font-display)" }}>
           Feel The Difference.
         </h2>
         <p className="text-gray-500 mb-12 text-lg max-w-xl text-left">
