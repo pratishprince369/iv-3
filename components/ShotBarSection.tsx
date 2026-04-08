@@ -71,7 +71,7 @@ export default function ShotBarSection() {
            viewport={{ once: true }}
            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full"
         >
-          {boosts.map((boost, i) => (
+          {boosts.map((boost) => (
             <div key={boost.name} className="flex flex-col text-left p-8 bg-[#03122b] border border-[#0ea5e9]/10 rounded-2xl hover:-translate-y-1 transition-transform duration-300">
               <div className="flex justify-between items-start mb-4">
                 <h4 className="font-sans text-[20px] text-[#e0f2fe] font-medium tracking-wide">

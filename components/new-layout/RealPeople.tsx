@@ -32,7 +32,7 @@ export default function RealPeople() {
                   <Star key={i} className={`w-4 h-4 ${i < review.rating ? 'fill-current' : 'text-gray-200 fill-current'}`} />
                 ))}
               </div>
-              <p className="text-gray-600 leading-relaxed text-sm mb-6 flex-grow">"{review.text}"</p>
+              <p className="text-gray-600 leading-relaxed text-sm mb-6 flex-grow">&quot;{review.text}&quot;</p>
               <div className="flex items-center space-x-3 mt-auto">
                 <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-bold">
                   {review.name.charAt(0)}
