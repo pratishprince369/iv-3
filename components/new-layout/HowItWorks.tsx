@@ -29,7 +29,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <div className="w-full bg-[#f4f7fb] py-16">
+    <div id="how-it-works" className="w-full bg-[#f4f7fb] py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-extrabold text-[#020d1f] tracking-tight mb-2 uppercase">How It Works</h2>
         <p className="text-gray-500 mb-12 text-lg">Simple, speedy, stress-free process.</p>

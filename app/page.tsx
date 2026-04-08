@@ -1,10 +1,9 @@
 'use client';
 
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import LoadingScreen from '@/components/LoadingScreen';
-import ScrollCanvas from '@/components/ScrollCanvas';
-import TextOverlay from '@/components/TextOverlay';
+import AlternativeHero from '@/components/new-layout/AlternativeHero';
 
 import FeaturesStrip from '@/components/new-layout/FeaturesStrip';
 import BenefitsStrip from '@/components/new-layout/BenefitsStrip';
@@ -15,23 +14,30 @@ import CertifiedProfessionals from '@/components/new-layout/CertifiedProfessiona
 import BookYourIVDrip from '@/components/new-layout/BookYourIVDrip';
 import FrequentlyAsked from '@/components/new-layout/FrequentlyAsked';
 import LightFooter from '@/components/new-layout/LightFooter';
-
 import ScrollReveal from '@/components/ScrollReveal';
-import { useSectionScroll } from '@/hooks/useSectionScroll';
+
 
 export default function HomePage() {
   const [loadProgress, setLoadProgress] = useState(0);
   const [loaded, setLoaded] = useState(false);
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const { progress } = useSectionScroll(sectionRef);
+
+  useEffect(() => {
+    let progress = 0;
+    const interval = setInterval(() => {
+      progress += 25;
+      if (progress >= 100) {
+        progress = 100;
+        clearInterval(interval);
+      }
+      setLoadProgress(progress);
+    }, 100);
+    return () => clearInterval(interval);
+  }, []);
 
   const handleLoadComplete = useCallback(() => {
     setLoaded(true);
   }, []);
 
-  const handleProgress = useCallback((progress: number) => {
-    setLoadProgress(progress);
-  }, []);
 
   return (
     <>
@@ -48,14 +54,9 @@ export default function HomePage() {
       >
         <Navbar />
 
-        {/* ── Canvas scroll section — 500vh — UNTOUCHED ───────────────── */}
-        <div ref={sectionRef} className="relative h-[500vh] z-0">
-          <div className="sticky top-0 h-screen w-full overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-b from-[#0c4a6e]/25 to-black pointer-events-none z-[-1]" aria-hidden="true" />
-            <ScrollCanvas progress={progress} onProgress={handleProgress} />
-            <TextOverlay progress={progress} />
-          </div>
-        </div>
+        {/* ── New Hero Section ───────────────── */}
+        <AlternativeHero />
+
 
         {/* ── Below-fold sections — Light Theme ──────────── */}
         <div className="relative z-10 bg-[#f4f7fb]">

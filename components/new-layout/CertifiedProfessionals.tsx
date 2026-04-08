@@ -5,7 +5,7 @@ export default function CertifiedProfessionals() {
   const colors = ['bg-blue-100', 'bg-red-100', 'bg-green-100', 'bg-purple-100', 'bg-yellow-100', 'bg-pink-100', 'bg-indigo-100'];
 
   return (
-    <div className="w-full bg-[#f4f7fb] py-16">
+    <div id="our-team" className="w-full bg-[#f4f7fb] py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-extrabold text-[#020d1f] tracking-tight mb-2 uppercase">13 Certified Professionals</h2>
         <p className="text-gray-500 mb-12 text-lg">Our team of Registered Nurses are highly trained and ready to help you thrive.</p>

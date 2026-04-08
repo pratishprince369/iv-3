@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function LightFooter() {
   return (
     <footer className="w-full bg-white border-t border-gray-100 pt-16 pb-8">
@@ -5,7 +7,15 @@ export default function LightFooter() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           
           <div className="col-span-1 md:col-span-1">
-            <h2 className="text-2xl font-black text-blue-600 tracking-tighter mb-4">AMARA<span className="text-yellow-500">GOLD</span></h2>
+            <div className="relative w-[180px] h-[60px] md:w-[200px] md:h-[68px] mb-4">
+              <Image
+                src="https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775522225/Revive-IV-Logo_pvyhi2.png"
+                alt="Revive IV Hydration Logo"
+                fill
+                className="object-contain object-left"
+                referrerPolicy="no-referrer"
+              />
+            </div>
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
               Premium mobile IV hydration therapy delivered directly to your door by certified professionals.
             </p>
@@ -48,7 +58,7 @@ export default function LightFooter() {
         </div>
 
         <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-gray-400 font-medium">
-          <p>&copy; {new Date().getFullYear()} Amara Gold IV Therapy. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Revive IV Hydration. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-blue-600 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-blue-600 transition-colors">Terms of Service</a>

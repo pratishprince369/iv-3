@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import Image from 'next/image';
+import { Phone } from 'lucide-react';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,11 +22,10 @@ export default function Navbar() {
   }, [isMenuOpen]);
 
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Drips', href: '#drips' },
-    { name: 'Shot Bar', href: '#shotbar' },
-    { name: 'How', href: '#how' },
+    { name: 'How It Works', href: '#how-it-works' },
+    { name: 'Our Drips', href: '#our-drips' },
     { name: 'Reviews', href: '#reviews' },
+    { name: 'Our Team', href: '#our-team' },
   ];
 
   return (
@@ -59,16 +59,17 @@ export default function Navbar() {
           <a
             key={link.name}
             href={link.href}
-            className="font-sans text-[10px] font-bold tracking-[0.2em] uppercase text-black hover:text-[#38bdf8] transition-colors drop-shadow-sm"
+            className="font-sans text-[15px] font-bold text-[#020d1f] hover:text-[#38bdf8] transition-colors drop-shadow-sm"
           >
             {link.name}
           </a>
         ))}
         <a
-          href="#contact"
-          className="px-5 py-2.5 border border-[#0ea5e9] text-[#0ea5e9] bg-black/10 backdrop-blur-[2px] font-sans text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-[#0ea5e9] hover:text-white transition-all drop-shadow-sm rounded-full"
+          href="tel:813-709-3698"
+          className="flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white font-sans text-[15px] font-bold hover:bg-blue-700 transition-all shadow-md rounded-full ml-2"
         >
-          Book Now
+          <Phone className="w-5 h-5 text-pink-400 fill-current" />
+          813-709-3698
         </a>
       </div>
 

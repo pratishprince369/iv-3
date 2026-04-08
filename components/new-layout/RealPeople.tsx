@@ -9,7 +9,7 @@ export default function RealPeople() {
   ];
 
   return (
-    <div className="w-full bg-[#f4f7fb] py-16">
+    <div id="reviews" className="w-full bg-[#f4f7fb] py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-extrabold text-[#020d1f] tracking-tight mb-2 uppercase">Real People. Real Results.</h2>
         <div className="flex items-center space-x-2 text-lg text-gray-500 mb-12">

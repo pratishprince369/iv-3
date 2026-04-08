@@ -1,6 +1,7 @@
 import { DM_Sans, Cormorant_Garamond, Dancing_Script } from 'next/font/google';
 import CustomCursor from '@/components/CustomCursor';
 import './globals.css';
+import './hero-styles.css';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
