@@ -6,15 +6,15 @@ import LoadingScreen from '@/components/LoadingScreen';
 import ScrollCanvas from '@/components/ScrollCanvas';
 import TextOverlay from '@/components/TextOverlay';
 
-// Redesigned components
-import FeaturesSection from '@/components/FeaturesSection'; // Why Choose
-import DripsSection from '@/components/DripsSection';       // Featured Drips
-import GroupTherapySection from '@/components/GroupTherapySection';
-import FaqAndReviewSection from '@/components/FaqAndReviewSection';
-import ShotBarSection from '@/components/ShotBarSection';
-import ProcessSection from '@/components/ProcessSection';
-import AboutSection from '@/components/AboutSection';
-import Footer from '@/components/Footer';
+import FeaturesStrip from '@/components/new-layout/FeaturesStrip';
+import BenefitsStrip from '@/components/new-layout/BenefitsStrip';
+import HowItWorks from '@/components/new-layout/HowItWorks';
+import FeelTheDifference from '@/components/new-layout/FeelTheDifference';
+import RealPeople from '@/components/new-layout/RealPeople';
+import CertifiedProfessionals from '@/components/new-layout/CertifiedProfessionals';
+import BookYourIVDrip from '@/components/new-layout/BookYourIVDrip';
+import FrequentlyAsked from '@/components/new-layout/FrequentlyAsked';
+import LightFooter from '@/components/new-layout/LightFooter';
 
 import ScrollReveal from '@/components/ScrollReveal';
 import { useSectionScroll } from '@/hooks/useSectionScroll';
@@ -57,39 +57,43 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* ── Below-fold sections — Light / Dark Blue Ocean theme ──────────── */}
-        <div className="relative z-10 bg-[#020d1f]">
+        {/* ── Below-fold sections — Light Theme ──────────── */}
+        <div className="relative z-10 bg-[#f4f7fb]">
 
           <ScrollReveal direction="up" distance={50}>
-            <DripsSection />
+            <FeaturesStrip />
           </ScrollReveal>
 
           <ScrollReveal direction="up" distance={60}>
-            <FeaturesSection />
+            <BenefitsStrip />
           </ScrollReveal>
 
           <ScrollReveal direction="up" distance={60}>
-            <GroupTherapySection />
+            <HowItWorks />
           </ScrollReveal>
 
           <ScrollReveal direction="up" distance={60}>
-            <FaqAndReviewSection />
+            <FeelTheDifference />
           </ScrollReveal>
 
           <ScrollReveal direction="up" distance={60}>
-            <ShotBarSection />
+            <RealPeople />
           </ScrollReveal>
 
           <ScrollReveal direction="up" distance={60}>
-            <ProcessSection />
+            <CertifiedProfessionals />
           </ScrollReveal>
 
           <ScrollReveal direction="up" distance={60}>
-            <AboutSection />
+            <BookYourIVDrip />
+          </ScrollReveal>
+
+          <ScrollReveal direction="up" distance={60}>
+            <FrequentlyAsked />
           </ScrollReveal>
 
           <ScrollReveal direction="up" distance={40}>
-            <Footer />
+            <LightFooter />
           </ScrollReveal>
 
         </div>
