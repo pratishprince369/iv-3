@@ -11,6 +11,7 @@ import HowItWorks from '@/components/new-layout/HowItWorks';
 import FeelTheDifference from '@/components/new-layout/FeelTheDifference';
 import RealPeople from '@/components/new-layout/RealPeople';
 import BookYourIVDrip from '@/components/new-layout/BookYourIVDrip';
+import ContactSectionLight from '@/components/new-layout/ContactSectionLight';
 import FrequentlyAsked from '@/components/new-layout/FrequentlyAsked';
 import LightFooter from '@/components/new-layout/LightFooter';
 import ScrollReveal from '@/components/ScrollReveal';
@@ -83,6 +84,10 @@ export default function HomePage() {
 
           <ScrollReveal direction="up" distance={60}>
             <BookYourIVDrip />
+          </ScrollReveal>
+
+          <ScrollReveal direction="up" distance={60}>
+            <ContactSectionLight />
           </ScrollReveal>
 
           <ScrollReveal direction="up" distance={60}>
