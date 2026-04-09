@@ -31,43 +31,7 @@ export default function BookYourIVDrip() {
 
           <div className="bg-white p-8 lg:p-10 rounded-[2rem] shadow-xl border border-gray-100">
             <h3 className="text-2xl font-black text-[#020d1f] mb-8 uppercase tracking-wide">Book Your Session</h3>
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">First Name</label>
-                  <input type="text" className="w-full bg-[#f4f7fb] border border-gray-200 rounded-xl px-4 py-3 text-[#020d1f] focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all font-medium" placeholder="John" />
-                </div>
-                <div>
-                  <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Last Name</label>
-                  <input type="text" className="w-full bg-[#f4f7fb] border border-gray-200 rounded-xl px-4 py-3 text-[#020d1f] focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all font-medium" placeholder="Doe" />
-                </div>
-              </div>
-              
-              <div>
-                <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email Address</label>
-                <input type="email" className="w-full bg-[#f4f7fb] border border-gray-200 rounded-xl px-4 py-3 text-[#020d1f] focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all font-medium" placeholder="john@example.com" />
-              </div>
-
-              <div>
-                <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Phone Number</label>
-                <input type="tel" className="w-full bg-[#f4f7fb] border border-gray-200 rounded-xl px-4 py-3 text-[#020d1f] focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all font-medium" placeholder="(555) 123-4567" />
-              </div>
-
-              <div>
-                <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Select Service</label>
-                <select className="w-full bg-[#f4f7fb] border border-gray-200 rounded-xl px-4 py-3 text-[#020d1f] focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all font-medium appearance-none">
-                  <option>Immunity Drip</option>
-                  <option>Energy Boost</option>
-                  <option>Hangover Recovery</option>
-                  <option>Myers Cocktail</option>
-                  <option>Inner Beauty</option>
-                </select>
-              </div>
-
-              <button type="button" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm uppercase tracking-wide py-4 rounded-xl transition-colors mt-4">
-                Confirm Booking Request
-              </button>
-            </form>
+            <iframe width="100%" height="1000" src="https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=01389c02584758d12e92e9396b7eb77f180cec49f3ab362ab2267a8fddc4c6206ee57013c1a537e6aa69605fce4db66ad95fcbc3b76e32a2" style={{ overflow: 'hidden' }} frameBorder="0"></iframe>
           </div>
         </div>
 
