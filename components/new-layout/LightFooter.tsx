@@ -50,7 +50,7 @@ export default function LightFooter() {
             <h4 className="text-[#020d1f] font-bold mb-6 uppercase tracking-wider text-sm">Contact Us</h4>
             <ul className="space-y-4 text-sm text-gray-500">
               <li>Call: (555) 123-4567</li>
-              <li>Email: info@amarainv.com</li>
+              <li>Email: info@reviveivdrip.io</li>
               <li>Hours: Mon-Sun 8am - 8pm</li>
             </ul>
           </div>

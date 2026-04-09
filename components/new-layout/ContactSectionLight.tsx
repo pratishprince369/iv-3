@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
+import { Phone, Mail, Facebook, Instagram } from 'lucide-react';
 
 export default function ContactSectionLight() {
   return (
@@ -13,13 +13,7 @@ export default function ContactSectionLight() {
           <div className="space-y-10">
             
             <div className="space-y-6">
-              <div className="flex items-start">
-                <MapPin className="w-6 h-6 text-blue-600 mt-1 mr-4 shrink-0" />
-                <div>
-                  <h4 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-1">Address</h4>
-                  <p className="text-lg text-[#020d1f] font-medium">Greater Tampa Bay Area & Surrounding</p>
-                </div>
-              </div>
+
 
               <div className="flex items-start">
                 <Phone className="w-6 h-6 text-blue-600 mt-1 mr-4 shrink-0" />
@@ -33,7 +27,7 @@ export default function ContactSectionLight() {
                 <Mail className="w-6 h-6 text-blue-600 mt-1 mr-4 shrink-0" />
                 <div>
                   <h4 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-1">Email ID</h4>
-                  <p className="text-lg text-[#020d1f] font-medium">info@amaraivtherapy.com</p>
+                  <p className="text-lg text-[#020d1f] font-medium">info@reviveivdrip.io</p>
                 </div>
               </div>
             </div>
@@ -41,10 +35,10 @@ export default function ContactSectionLight() {
             <div className="pt-8 border-t border-gray-100">
                <h4 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">Follow Us</h4>
                <div className="flex space-x-4">
-                 <a href="#" className="w-12 h-12 rounded-full bg-[#f4f7fb] flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors border border-gray-100 shadow-sm aria-label="Facebook">
+                 <a href="#" className="w-12 h-12 rounded-full bg-[#f4f7fb] flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors border border-gray-100 shadow-sm" aria-label="Facebook">
                    <Facebook className="w-5 h-5" />
                  </a>
-                 <a href="#" className="w-12 h-12 rounded-full bg-[#f4f7fb] flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors border border-gray-100 shadow-sm" aria-label="Instagram">
+                 <a href="https://www.instagram.com/revivesanctuary?igsh=MzU3Y2sycTd3cnk0" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-[#f4f7fb] flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors border border-gray-100 shadow-sm" aria-label="Instagram">
                    <Instagram className="w-5 h-5" />
                  </a>
                  <a href="#" className="w-12 h-12 rounded-full bg-[#f4f7fb] flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors border border-gray-100 shadow-sm" aria-label="TikTok">
@@ -61,7 +55,7 @@ export default function ContactSectionLight() {
           {/* Right Side: Google Map */}
           <div className="h-[400px] w-full rounded-[2rem] overflow-hidden shadow-xl border border-gray-100 relative bg-[#f4f7fb]">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112702.43577322964!2d-82.55392686884695!3d27.99427334710182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b78ece7c20c3%3A0xc3dd34fc5e9d91f1!2sTampa%2C%20FL%2C%20USA!5e0!3m2!1sen!2sin!4v1714030000000!5m2!1sen!2sin" 
+              src="https://maps.google.com/maps?q=Toronto,%20Canada&t=&z=12&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
