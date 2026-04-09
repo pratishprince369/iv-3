@@ -9,42 +9,49 @@ const drips = [
     subtitle: 'Hangover Cure',
     desc: 'Replenish, rehydrate, and bounce back fast.',
     color: '#ffcc00', // Yellow
+    price: '$299'
   },
   {
     title: 'Revive Defense',
     subtitle: 'Immunity',
     desc: 'Strengthen immunity and fight off what slow you down.',
     color: '#4ade80', // Green
+    price: '$375'
   },
   {
     title: 'Beautify',
     subtitle: 'Beauty Drip',
     desc: 'Hydrate your skin, boost radiance, and glow from within.',
     color: '#ec4899', // Pink
+    price: '$365'
   },
   {
     title: 'Revive Recovery',
     subtitle: 'Athletic Recovery',
     desc: 'Support muscle repair, reduce soreness, and recover faster.',
     color: '#9333ea', // Deep Purple
+    price: '$325'
   },
   {
     title: 'All In One Revive',
     subtitle: 'Myers Cocktail',
     desc: 'The ultimate blend for total wellness, hydration, and balance.',
     color: '#6366f1', // Light Indigo
+    price: '$335'
   },
   {
     title: 'Revive Calm',
     subtitle: 'Relax. Reset. Restore.',
     desc: 'Relax your mind, ease stress, and reset your body.',
     color: '#d946ef', // Light Purple
+    price: '$325'
   },
   {
     title: 'Brain Focus',
     subtitle: 'NAD+ Drip',
     desc: 'Sharpen your focus, boost mental clarity, and stay on top of your game.',
     color: '#06b6d4', // Bright Cyan
+    price: '$565'
   }
 ];
 
@@ -175,7 +182,7 @@ export default function DripsSection() {
               
               <div className="mt-8 pt-6 border-t border-white/5 text-center relative z-10">
                 <button className="font-sans text-[12px] font-medium tracking-[0.2em] uppercase text-white/50 group-hover:text-white transition-colors duration-300 w-full hover:bg-white/5 py-4 rounded-full">
-                  Book This Drip
+                  Book This Drip | {drip.price}
                 </button>
               </div>
             </motion.div>

@@ -7,7 +7,7 @@ const boosts = [
   {
     name: "B12 Energy Shot",
     desc: "Boost energy, metabolism & focus",
-    price: "$30"
+    price: "$29.99"
   },
   {
     name: "Vitamin D Injection",
@@ -17,7 +17,7 @@ const boosts = [
   {
     name: "Glutathione Push",
     desc: "Detox, brighten skin & boost glow",
-    price: "$65"
+    price: "$60"
   },
   {
     name: "Immunity Boost",

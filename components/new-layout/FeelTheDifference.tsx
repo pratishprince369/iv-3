@@ -2,37 +2,37 @@ export default function FeelTheDifference() {
   const drips = [
     { 
       title: 'Liquid Gold', subtitle: 'Hangover Cure', desc: 'Replenish, rehydrate, and bounce back fast.',
-      price: '$199', glow: 'from-amber-200/50', color: 'bg-amber-400', btnBorder: 'border-amber-400', btnText: 'text-amber-500', btnHover: 'hover:bg-amber-400',
+      price: '$299', glow: 'from-amber-200/50', color: 'bg-amber-400', btnBorder: 'border-amber-400', btnText: 'text-amber-500', btnHover: 'hover:bg-amber-400',
       image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775689075/iv-1_jeczya.png' 
     },
     { 
       title: 'Revive Defense', subtitle: 'Immunity Drip', desc: 'Strengthen immunity and fight off what slows you down.',
-      price: '$189', glow: 'from-green-200/50', color: 'bg-green-400', btnBorder: 'border-green-500', btnText: 'text-green-600', btnHover: 'hover:bg-green-500',
+      price: '$375', glow: 'from-green-200/50', color: 'bg-green-400', btnBorder: 'border-green-500', btnText: 'text-green-600', btnHover: 'hover:bg-green-500',
       image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775689199/iv-2_krwous.png' 
     },
     { 
       title: 'Beautify', subtitle: 'Beauty Drip', desc: 'Hydrate your skin, boost radiance, and glow from within.',
-      price: '$220', glow: 'from-rose-200/50', color: 'bg-rose-400', btnBorder: 'border-rose-400', btnText: 'text-rose-500', btnHover: 'hover:bg-rose-400',
+      price: '$365', glow: 'from-rose-200/50', color: 'bg-rose-400', btnBorder: 'border-rose-400', btnText: 'text-rose-500', btnHover: 'hover:bg-rose-400',
       image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775689282/iv-3_jibbl7.png' 
     },
     { 
       title: 'Revive Recovery', subtitle: 'Athletic Recovery', desc: 'Support muscle repair, reduce soreness, and recover faster.',
-      price: '$179', glow: 'from-purple-200/50', color: 'bg-purple-400', btnBorder: 'border-purple-500', btnText: 'text-purple-600', btnHover: 'hover:bg-purple-500',
+      price: '$325', glow: 'from-purple-200/50', color: 'bg-purple-400', btnBorder: 'border-purple-500', btnText: 'text-purple-600', btnHover: 'hover:bg-purple-500',
       image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775689412/iv-4_zi9cmk.png' 
     },
     { 
       title: 'All In One Revive', subtitle: 'Myers Cocktail', desc: 'The ultimate blend for total wellness, hydration, and balance.',
-      price: '$250', glow: 'from-indigo-200/50', color: 'bg-indigo-400', btnBorder: 'border-indigo-400', btnText: 'text-indigo-500', btnHover: 'hover:bg-indigo-400',
+      price: '$335', glow: 'from-indigo-200/50', color: 'bg-indigo-400', btnBorder: 'border-indigo-400', btnText: 'text-indigo-500', btnHover: 'hover:bg-indigo-400',
       image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775689491/iv-5_xwryqq.png' 
     },
     { 
       title: 'Revive Calm', subtitle: 'Relax. Reset. Restore.', desc: 'Relax your mind, ease stress, and reset your body.',
-      price: '$210', glow: 'from-purple-200/50', color: 'bg-purple-400', btnBorder: 'border-purple-400', btnText: 'text-purple-500', btnHover: 'hover:bg-purple-400',
+      price: '$325', glow: 'from-purple-200/50', color: 'bg-purple-400', btnBorder: 'border-purple-400', btnText: 'text-purple-500', btnHover: 'hover:bg-purple-400',
       image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775689639/iv-6_qq22bj.png' 
     },
     { 
       title: 'Brain Focus', subtitle: 'NAD+ MENTAL CLARITY', desc: 'Sharpen your focus, boost mental clarity, stay on top of your game.',
-      price: '$250', glow: 'from-cyan-200/50', color: 'bg-cyan-400', btnBorder: 'border-cyan-400', btnText: 'text-cyan-500', btnHover: 'hover:bg-cyan-400',
+      price: '$565', glow: 'from-cyan-200/50', color: 'bg-cyan-400', btnBorder: 'border-cyan-400', btnText: 'text-cyan-500', btnHover: 'hover:bg-cyan-400',
       image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775689968/iv-7_jcjr8k.png' 
     },
   ];
@@ -77,7 +77,7 @@ export default function FeelTheDifference() {
                 </p>
               </div>
               <button className={`z-10 mt-auto text-[11px] font-bold ${drip.btnText} bg-white w-full py-2.5 rounded-full ${drip.btnHover} hover:text-white transition-colors uppercase border ${drip.btnBorder}`}>
-                Book This Drip
+                Book This Drip | {drip.price}
               </button>
             </div>
           ))}
