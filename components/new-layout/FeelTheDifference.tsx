@@ -3,37 +3,37 @@ export default function FeelTheDifference() {
     { 
       title: 'Liquid Gold', subtitle: 'Hangover Cure', desc: 'Replenish, rehydrate, and bounce back fast.',
       price: '$299', glow: 'from-amber-200/50', color: 'bg-amber-400', btnBorder: 'border-amber-400', btnText: 'text-amber-500', btnHover: 'hover:bg-amber-400',
-      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775689075/iv-1_jeczya.png' 
+      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775754367/iv-1_egg7bd.png' 
     },
     { 
       title: 'Revive Defense', subtitle: 'Immunity Drip', desc: 'Strengthen immunity and fight off what slows you down.',
       price: '$375', glow: 'from-green-200/50', color: 'bg-green-400', btnBorder: 'border-green-500', btnText: 'text-green-600', btnHover: 'hover:bg-green-500',
-      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775689199/iv-2_krwous.png' 
+      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775754803/iv-2_wzs2vo.png' 
     },
     { 
       title: 'Beautify', subtitle: 'Beauty Drip', desc: 'Hydrate your skin, boost radiance, and glow from within.',
       price: '$365', glow: 'from-rose-200/50', color: 'bg-rose-400', btnBorder: 'border-rose-400', btnText: 'text-rose-500', btnHover: 'hover:bg-rose-400',
-      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775689282/iv-3_jibbl7.png' 
+      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775757098/iv-3_ovk1ji.png' 
     },
     { 
       title: 'Revive Recovery', subtitle: 'Athletic Recovery', desc: 'Support muscle repair, reduce soreness, and recover faster.',
       price: '$325', glow: 'from-purple-200/50', color: 'bg-purple-400', btnBorder: 'border-purple-500', btnText: 'text-purple-600', btnHover: 'hover:bg-purple-500',
-      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775689412/iv-4_zi9cmk.png' 
+      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775757839/iv-4_ylr2gx.png' 
     },
     { 
       title: 'All In One Revive', subtitle: 'Myers Cocktail', desc: 'The ultimate blend for total wellness, hydration, and balance.',
       price: '$335', glow: 'from-indigo-200/50', color: 'bg-indigo-400', btnBorder: 'border-indigo-400', btnText: 'text-indigo-500', btnHover: 'hover:bg-indigo-400',
-      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775689491/iv-5_xwryqq.png' 
+      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775758025/iv-5_j3mzaz.png' 
     },
     { 
       title: 'Revive Calm', subtitle: 'Relax. Reset. Restore.', desc: 'Relax your mind, ease stress, and reset your body.',
       price: '$325', glow: 'from-purple-200/50', color: 'bg-purple-400', btnBorder: 'border-purple-400', btnText: 'text-purple-500', btnHover: 'hover:bg-purple-400',
-      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775689639/iv-6_qq22bj.png' 
+      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775759078/iv-6_l8v9xc.png' 
     },
     { 
       title: 'Brain Focus', subtitle: 'NAD+ MENTAL CLARITY', desc: 'Sharpen your focus, boost mental clarity, stay on top of your game.',
       price: '$565', glow: 'from-cyan-200/50', color: 'bg-cyan-400', btnBorder: 'border-cyan-400', btnText: 'text-cyan-500', btnHover: 'hover:bg-cyan-400',
-      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775689968/iv-7_jcjr8k.png' 
+      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775759328/iv-7_ilufck.png' 
     },
   ];
 
