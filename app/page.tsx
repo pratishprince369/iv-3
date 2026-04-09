@@ -10,7 +10,6 @@ import BenefitsStrip from '@/components/new-layout/BenefitsStrip';
 import HowItWorks from '@/components/new-layout/HowItWorks';
 import FeelTheDifference from '@/components/new-layout/FeelTheDifference';
 import RealPeople from '@/components/new-layout/RealPeople';
-import CertifiedProfessionals from '@/components/new-layout/CertifiedProfessionals';
 import BookYourIVDrip from '@/components/new-layout/BookYourIVDrip';
 import FrequentlyAsked from '@/components/new-layout/FrequentlyAsked';
 import LightFooter from '@/components/new-layout/LightFooter';
@@ -81,9 +80,6 @@ export default function HomePage() {
             <RealPeople />
           </ScrollReveal>
 
-          <ScrollReveal direction="up" distance={60}>
-            <CertifiedProfessionals />
-          </ScrollReveal>
 
           <ScrollReveal direction="up" distance={60}>
             <BookYourIVDrip />
