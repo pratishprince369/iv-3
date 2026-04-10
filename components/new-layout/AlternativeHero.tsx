@@ -1,9 +1,18 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ShieldCheck, Clock, Home, Star, Phone, AppWindow } from "lucide-react";
 
 export default function AlternativeHero() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const searchParams = new URLSearchParams(window.location.search);
+      if (searchParams.get('booking') === 'true' || searchParams.get('payment') === 'success') {
+        setIsPopupOpen(true);
+      }
+    }
+  }, []);
 
   return (
     <>
@@ -187,8 +196,8 @@ export default function AlternativeHero() {
 
       {/* Booking Popup Modal */}
       {isPopupOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
-          <div className="bg-white rounded-3xl overflow-hidden shadow-2xl w-full max-w-[800px] max-h-[90vh] flex flex-col relative">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm md:p-4">
+          <div className="bg-white md:rounded-3xl overflow-hidden shadow-2xl w-full h-full md:h-auto md:max-w-5xl md:max-h-[95vh] flex flex-col relative">
             <button 
               onClick={() => setIsPopupOpen(false)}
               className="absolute top-4 right-4 z-10 bg-gray-100 hover:bg-gray-200 text-gray-800 w-10 h-10 rounded-full flex items-center justify-center transition-colors"

@@ -3,7 +3,8 @@ export default function FeelTheDifference() {
     { 
       title: 'Liquid Gold', subtitle: 'Hangover Cure', desc: 'Replenish, rehydrate, and bounce back fast.',
       price: '$299', glow: 'from-amber-200/50', color: 'bg-amber-400', btnBorder: 'border-amber-400', btnText: 'text-amber-500', btnHover: 'hover:bg-amber-400',
-      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775754367/iv-1_egg7bd.png' 
+      image: 'https://res.cloudinary.com/dpcidympa/image/upload/q_auto/f_auto/v1775754367/iv-1_egg7bd.png',
+      link: 'https://square.link/u/PZKcRCjW'
     },
     { 
       title: 'Revive Defense', subtitle: 'Immunity Drip', desc: 'Strengthen immunity and fight off what slows you down.',
@@ -76,9 +77,15 @@ export default function FeelTheDifference() {
                   {drip.desc}
                 </p>
               </div>
-              <button className={`z-10 mt-auto text-[11px] font-bold ${drip.btnText} bg-white w-full py-2.5 rounded-full ${drip.btnHover} hover:text-white transition-colors uppercase border ${drip.btnBorder}`}>
-                Book This Drip | {drip.price}
-              </button>
+              {drip.link ? (
+                <a href={drip.link} target="_blank" rel="noopener noreferrer" className={`z-10 mt-auto text-[11px] font-bold ${drip.btnText} bg-white w-full py-2.5 rounded-full ${drip.btnHover} hover:text-white transition-colors uppercase border ${drip.btnBorder} block text-center flex items-center justify-center`}>
+                  Book This Drip | {drip.price}
+                </a>
+              ) : (
+                <button className={`z-10 mt-auto text-[11px] font-bold ${drip.btnText} bg-white w-full py-2.5 rounded-full ${drip.btnHover} hover:text-white transition-colors uppercase border ${drip.btnBorder}`}>
+                  Book This Drip | {drip.price}
+                </button>
+              )}
             </div>
           ))}
         </div>
