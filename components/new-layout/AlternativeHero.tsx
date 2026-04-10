@@ -1,8 +1,10 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { ShieldCheck, Clock, Home, Star, Phone, AppWindow } from "lucide-react";
 
 export default function AlternativeHero() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   return (
     <>
       <style dangerouslySetInnerHTML={{__html: `
@@ -72,9 +74,9 @@ export default function AlternativeHero() {
 
             {/* Buttons */}
             <div className="flex flex-wrap gap-4 mb-14">
-              <a href="#booking" className="bg-[#0066FF] hover:bg-[#0052CC] text-white px-8 py-3.5 rounded-full font-bold flex items-center justify-center gap-2.5 transition-colors text-[14px] shadow-lg shadow-blue-500/30">
+              <button onClick={() => setIsPopupOpen(true)} className="bg-[#0066FF] hover:bg-[#0052CC] text-white px-8 py-3.5 rounded-full font-bold flex items-center justify-center gap-2.5 transition-colors text-[14px] shadow-lg shadow-blue-500/30">
                 <AppWindow className="w-5 h-5" /> Book Your Session
-              </a>
+              </button>
               <a href="tel:813-709-3698" className="border border-[#B3DFFF] bg-[#EEF6FF] text-[#1A202C] hover:bg-[#E0F0FE] px-8 py-3.5 rounded-full font-bold flex items-center justify-center gap-2.5 transition-all text-[14px] shadow-sm">
                 <Phone className="w-[18px] h-[18px]" /> 813-709-3698
               </a>
@@ -182,6 +184,27 @@ export default function AlternativeHero() {
            <span className="text-[9px] tracking-[0.25em] text-[#64748B] font-bold">SCROLL</span>
         </div>
       </section>
+
+      {/* Booking Popup Modal */}
+      {isPopupOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
+          <div className="bg-white rounded-3xl overflow-hidden shadow-2xl w-full max-w-[800px] max-h-[90vh] flex flex-col relative">
+            <button 
+              onClick={() => setIsPopupOpen(false)}
+              className="absolute top-4 right-4 z-10 bg-gray-100 hover:bg-gray-200 text-gray-800 w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+              aria-label="Close"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div className="p-6 pb-5 border-b border-gray-100 shrink-0">
+              <h3 className="text-2xl font-black text-[#020d1f] uppercase tracking-wide">Book Your Session</h3>
+            </div>
+            <div className="w-full h-full overflow-y-auto overflow-x-hidden p-2 sm:p-6 bg-[#f8f9fa]">
+               <iframe width="100%" height="650" src="https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=01389c02584758d12e92e9396b7eb77f180cec49f3ab362ab2267a8fddc4c6206ee57013c1a537e6aa69605fce4db66ad95fcbc3b76e32a2" style={{ border: 'none', background: 'transparent' }} frameBorder="0"></iframe>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
