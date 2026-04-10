@@ -46,13 +46,13 @@ export default function MeetTheFounder() {
 
              <div className="space-y-5 text-gray-600 text-lg leading-relaxed">
                <p>
-                 As the founder of <strong className="text-[#020d1f]">Revive IV Hydration</strong>, I believe that true wellness starts from within. With years of dedicated experience as a Registered Nurse, my mission has always been to provide compassionate, high-quality care that genuinely improves people's lives.
+                 As the founder of <strong className="text-[#020d1f]">Revive IV Hydration</strong>, I believe that true wellness starts from within. With years of dedicated experience as a Registered Nurse, my mission has always been to provide compassionate, high-quality care that genuinely improves people&apos;s lives.
                </p>
                <p>
                  I created this service to bring hospital-grade hydration and tailored vitamin therapies directly to your doorstep. Whether you need to recover faster, boost your energy, or maintain your peak health, we are committed to delivering a safe and luxurious experience right in the comfort of your own space.
                </p>
                <p className="font-medium italic text-gray-500 border-l-4 border-blue-400 pl-4 py-1">
-                 "Your well-being is my ultimate priority. Let's revive your health together."
+                 &quot;Your well-being is my ultimate priority. Let&apos;s revive your health together.&quot;
                </p>
              </div>
              
